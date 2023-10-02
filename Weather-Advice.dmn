@@ -3,12 +3,12 @@
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_E52CC493-4C59-407A-9788-33E33C177997" name="temperature" isCollection="false">
     <dmn:typeRef>string</dmn:typeRef>
-    <dmn:allowedValues kie:constraintType="expression" id="_2DBC2383-8C6A-42E9-B38A-68153955C341">
-      <dmn:text>“cold”, “warm”, “hot”</dmn:text>
+    <dmn:allowedValues kie:constraintType="expression" id="_2A9C4031-86EA-4D9B-970A-D091ABE6E3DA">
+      <dmn:text>"cold", "warm", "hot"</dmn:text>
     </dmn:allowedValues>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_71390CF0-6688-45A4-AEB8-2D5887D51ACF" name="weather" isCollection="false">
-    <dmn:itemComponent id="_17FBD58E-D615-44BA-AF81-8BF9ADF43C1F" name="temperature" isCollection="false">
+    <dmn:itemComponent id="_7156B6BB-49E8-4C59-893C-EA118C2E878A" name="temperature" isCollection="false">
       <dmn:typeRef>temperature</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_73D346FC-913C-4EB1-96C9-FF927E086DE0" name="rainForecast" isCollection="false">
@@ -55,20 +55,6 @@
       </dmn:input>
       <dmn:output id="_476A8F3A-AE8E-4A00-92B2-195BEB240672"/>
       <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_A164239E-7337-446A-93B4-B4248A516249">
-        <dmn:inputEntry id="_F509332B-4031-437E-BE35-B02DF16AFEB4">
-          <dmn:text>&lt;0</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_D5850349-CF73-4031-BC57-7C6E5DFE07D6">
-          <dmn:text>"cold"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_1BAF9F5F-CC3F-4F69-A5F8-A0790C1B244C">
-          <dmn:text>"Brace yourself, it's gonna be windy"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
       <dmn:rule id="_EC8C7571-E577-413F-B877-B757CC820F82">
         <dmn:inputEntry id="_D6749918-1ADC-473D-9988-773D09DE39F3">
           <dmn:text>[0..20)</dmn:text>
@@ -111,20 +97,6 @@
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule id="_F7DA9390-FB9B-440F-B5F2-3CB126A3BCDF">
-        <dmn:inputEntry id="_92A391C5-67CC-4762-843E-36325F766A2A">
-          <dmn:text>&gt;100</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_29F6F6FE-9EE8-4D1F-A1C6-96A477A7EF3F">
-          <dmn:text>"hot"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_7BF76318-44DE-483C-B562-27263596F215">
-          <dmn:text>"Thunder storm, don't go out"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
@@ -136,7 +108,7 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_558BB399-EB4D-4C69-B477-B00B194CC1ED">
             <kie:width>50</kie:width>
-            <kie:width>316</kie:width>
+            <kie:width>227</kie:width>
             <kie:width>100</kie:width>
             <kie:width>552</kie:width>
             <kie:width>100</kie:width>
